@@ -1,0 +1,60 @@
+---> Classes Abstratas:
+
+recurso que proporciona um bloqueio na criação de objetos, nao pode ser instanciado objeto da classe abstract
+impedimos a criaçao de objetos dessa classe
+pode ter:
+Atributos
+Métodos
+Métodos abstratos -> nao possuem implementaçao, apenas declaraçao, obrigatoriamente, as classes que herdarem desta classe com método abstract precisam implementar estes métodos
+
+---> Template Method:
+
+Define o esqueleto de um algoritmo dentro de um método, transferindo alguns de seus passos para as subclasses
+Permite as subclasses redefinam certos passos de um algoritmo sem alterar a estrutura de próprio algoritmo
+
+Algoritmos sao "receitas" passo-a-passo para resolver um problema:
+receber numero;
+retornar numero * numero;
+
+metodoPrincipal(){
+    passo1();
+    passo2();
+    passo3();
+}
+
+Final: modificador de acesso que faz com que o elemento que esteja utilizando não possa ser extendido/reescrito
+
+---> Interfaces:
+Conhecidas como "contratos"
+Pode conter: Constantes (MAIÚSCULAS)
+Métodos Abstratos
+
+As classes que implementarem uma interface OBRIGATORIAMENTE deverão implementar os métodos abstratos e terão a mesma constante
+NÃO CONSEGUE TER VARIÁVEL/ATRIBUTOS E MÉTODOS IMPLEMENTADOS, APENAS MÉTODOS ABSTRATOS E CONSTANTE
+
+---> Atributos estáticos:
+valores sao compartilhados entre as instâncias da classe
+Acessa pela classe = Conta.contador
+Exemplo:
+NomeDaClasse.atributo
+
+---> Métodos estáticos:
+Nao depende de uma instancia da classe para ser utilizado
+Exemplo:
+NomeDaClasse.metodo
+
+---< Try/Catch (Tratamento de Exceções):
+Try -> tenta realizar algo, geralmente realiza aquilo que pode acarretar um problema
+Catch -> captura o erro e com isso oferece ao usuário uma mensagem adequada sem que o sistema quebre
+
+Existem dois grupos de exceçoes:
+
+Checked Exception: Menos perigosas -> fazem com que o programa nao seja executado até que a determinada exceçao seja tratada
+- Exception
+- IOException
+- SQLException
+
+Unchecked Exception: -> Só acontecem durante a execução do programa e desta forma não conseguimos saber onde ela vai ocorrer
+- RuntimeException
+- NullPointerException
+- ArrayOutOfBoundsException

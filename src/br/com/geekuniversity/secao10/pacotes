@@ -1,0 +1,7 @@
+Organizar o código fonte do projeto
+Indicam onde determinado arquivo do projeto se encontra
+Nomes dos pacotes devem ser em letras minúsculas, sem espaço, sem caracteres especiais e sem acentuação
+Por convenção, é utilizado o nome de pacotes, o domínio da empresa criadora do objeto, ao contrário, sendo a última parte do nome o especificador do pacote
+
+Padrão de Projeto:
+MVC - Model - View - Controller
