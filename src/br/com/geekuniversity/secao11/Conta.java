@@ -1,5 +1,7 @@
 package br.com.geekuniversity.secao11;
 
+import java.util.Objects;
+
 public class Conta {
 
     private int numero;
@@ -67,5 +69,19 @@ public class Conta {
     }
     public void depositar(float valor){
         this.saldo += valor;
+    }
+
+    @Override
+    public String toString() {
+        return "saldo=" + getSaldo();
+    }
+    @Override
+    public boolean equals (Object o) {
+        if (!(o instanceof Conta)){
+            return false;
+        } else {
+            Conta verificar = (Conta) o;
+            return verificar.getSaldo() == this.getSaldo();
+        }
     }
 }
