@@ -10,12 +10,12 @@ import com.sun.security.jgss.GSSUtil;
 public class Programa36 {
     public static void main(String[] args) {
 
-        Cliente cliente1 = new Cliente("Bart", "Casa Azul");
-        Cliente cliente2 = new Cliente("Homer", "Casa Amarela");
+        Cliente cliente1 = new Cliente("Bart", 22, "Casa Azul");
+        Cliente cliente2 = new Cliente("Homer", 17, "Casa Amarela");
 
         Conta c1 = new Conta(1, 250, 250, cliente1);
         Conta c2 = new Conta(2, 300, 300, cliente2);
-        Conta c3 = new Conta(3, 350, 350, new Cliente("Lisa", "Casa Rosa"));
+        Conta c3 = new Conta(3, 350, 350, new Cliente("Lisa", 12, "Casa Rosa"));
 
         System.out.println(c1);
         System.out.println(c2);

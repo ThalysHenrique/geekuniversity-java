@@ -9,7 +9,7 @@ import java.util.Scanner;
 //- Java Archive -> Compactado Java
 public class Principal {
 
-    static Cliente cliente = new Cliente("Lebron", "EUA");
+    static Cliente cliente = new Cliente("Lebron", 30, "EUA");
     static Conta conta = new Conta(1, 300, 500, cliente);
     static Scanner sc = new Scanner(System.in);
 
