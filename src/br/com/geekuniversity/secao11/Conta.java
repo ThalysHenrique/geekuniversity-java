@@ -67,9 +67,16 @@ public class Conta {
             System.out.println("Saldo insuficiente!");
         }
     }
+    // Forma 1
     public void depositar(float valor){
-        this.saldo += valor;
+        synchronized (this) {
+            this.saldo += valor;
+        }
     }
+    // Forma 2
+//    public synchronized void depositar(float valor){
+//        this.saldo += valor;
+//    }
 
     @Override
     public String toString() {

@@ -58,3 +58,8 @@ Unchecked Exception: -> Só acontecem durante a execução do programa e desta f
 - RuntimeException
 - NullPointerException
 - ArrayOutOfBoundsException
+
+---> Threads:
+- Realização de processo em paralelo
+- Implements Runnable e o método que precisa ser executado em paralelo deve ser executado dentro de run(){}
+Syncronized
