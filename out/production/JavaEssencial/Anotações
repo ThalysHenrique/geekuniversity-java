@@ -63,3 +63,9 @@ Unchecked Exception: -> Só acontecem durante a execução do programa e desta f
 - Realização de processo em paralelo
 - Implements Runnable e o método que precisa ser executado em paralelo deve ser executado dentro de run(){}
 Syncronized
+
+---> ESTRUTURA DE DADOS:
+// Lista Ligada // LinkedList
+//- Em um vetor os elementos estão um do lado do outro, enquanto em uma lista ligada estão em lugares diferentes,
+// porém um aponta para o outro indicando o proximo elemento
+// [0][3][1][4][2]
